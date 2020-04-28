@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#0000ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="求救小幫手" />
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_police"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:onClick="processPolice"
+            android:text="報案" />
+
+        <Button
+            android:id="@+id/btn_rescue"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:background="#FF5722"
+            android:onClick="processRescue"
+            android:text="救難" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_emergencyCall"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="10sp"
+        android:background="#8BC34A"
+        android:onClick="processEmergencyCall"
+        android:text="緊急聯絡人"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+
+
